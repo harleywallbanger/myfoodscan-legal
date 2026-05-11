@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFoodScan — Datenschutzerklärung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="./index.html" class="brand">MyFoodScan</a>
+      <div class="lang-switcher">
+        <a href="./privacy-en.html">EN</a>
+        <a href="./privacy-fr.html">FR</a>
+        <a href="./privacy-de.html" class="active">DE</a>
+        <a href="./privacy-es.html">ES</a>
+      </div>
+    </header>
+    <main>
+      <h1>Datenschutzerklärung</h1>
+      <p class="updated">Zuletzt aktualisiert: <span id="date">2026-05-11</span></p>
+
+      <h2>1. Wer wir sind</h2>
+      <p>MyFoodScan ist eine mobile Anwendung, herausgegeben von Jérôme Veit, wohnhaft in Frankreich.<br>Kontakt: <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a></p>
+
+      <h2>2. Erhobene Daten</h2>
+      <h3>Nur lokal auf Ihrem Gerät gespeichert</h3>
+      <ul>
+        <li>Ihre angegebenen Allergene und Ernährungspräferenzen</li>
+        <li>Ihr Scan-Verlauf</li>
+        <li>Ihre Sprach- und Anzeigeeinstellungen</li>
+        <li>Die Anzahl Ihrer Scans (für das Freemium-Modell)</li>
+      </ul>
+      <p>Diese Daten verlassen Ihr Gerät nicht. Sie werden bei Deinstallation der App gelöscht.</p>
+
+      <h3>An unsere Server übermittelt (Cloudflare Worker)</h3>
+      <ul>
+        <li>Der Text der Zutatenliste des gescannten Produkts, wenn Sie die KI-Analyse nutzen (Premium-Funktion)</li>
+        <li>Es wird keine persönliche Kennung übertragen</li>
+      </ul>
+      <p>Diese Daten werden zur Analyse an die Anthropic-API (Claude) weitergeleitet und nicht auf unseren Servern gespeichert.</p>
+
+      <h3>Von RevenueCat verwaltet (Abonnements)</h3>
+      <ul>
+        <li>Anonyme Apple- oder Google-Abonnement-Kennung</li>
+        <li>Verlauf der In-App-Käufe</li>
+        <li>Status Ihres Abonnements</li>
+      </ul>
+      <p>Siehe Datenschutzerklärung von RevenueCat: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+
+      <h2>3. Daten, die wir NICHT erheben</h2>
+      <ul>
+        <li>Ihren Namen, Ihre Adresse oder E-Mail-Adresse</li>
+        <li>Ihren Standort</li>
+        <li>Ihre Kontakte</li>
+        <li>Ihre Fotos (außer wenn Sie sie ausdrücklich übermitteln)</li>
+        <li>Werbe-Kennungen</li>
+        <li>Daten zu Tracking- oder Werbezwecken</li>
+      </ul>
+
+      <h2>4. Auftragsverarbeiter</h2>
+      <ul>
+        <li><strong>Cloudflare</strong> (Workers und Proxy-Hosting) — <a href="https://www.cloudflare.com/privacypolicy/">Datenschutzerklärung</a></li>
+        <li><strong>Anthropic PBC</strong> (Claude-Modell für KI-Analyse) — <a href="https://www.anthropic.com/legal/privacy">Datenschutzerklärung</a></li>
+        <li><strong>Open Food Facts</strong> (Produktdatenbank, anonyme Abfragen) — <a href="https://world.openfoodfacts.org/privacy">Datenschutzerklärung</a></li>
+        <li><strong>RevenueCat</strong> (Abonnementverwaltung) — <a href="https://www.revenuecat.com/privacy">Datenschutzerklärung</a></li>
+        <li><strong>Apple / Google</strong> (In-App-Zahlungen) — jeweilige Datenschutzerklärungen</li>
+      </ul>
+
+      <h2>5. Ihre Rechte (DSGVO)</h2>
+      <ul>
+        <li>Auf Ihre Daten zugreifen: alle Ihre Daten sind in der App sichtbar (Profil, Verlauf)</li>
+        <li>Sie löschen: die Deinstallation der App entfernt alle lokalen Daten</li>
+        <li>Sie exportieren: kontaktieren Sie uns unter <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a></li>
+        <li>Beschwerde bei Ihrer zuständigen Datenschutzbehörde einreichen</li>
+      </ul>
+
+      <h2>6. Sicherheit</h2>
+      <p>Alle Kommunikationen mit unseren Servern sind über HTTPS (TLS 1.2+) verschlüsselt. Wir speichern keine personenbezogenen Daten auf unseren Servern.</p>
+
+      <h2>7. Kinder</h2>
+      <p>MyFoodScan ist nicht für Kinder unter 13 (bzw. 16 Jahren je nach Land) bestimmt. Wir erheben wissentlich keine Daten von Kindern.</p>
+
+      <h2>8. Änderungen</h2>
+      <p>Diese Datenschutzerklärung kann sich ändern. Jede wesentliche Änderung wird in der Anwendung mitgeteilt.</p>
+
+      <h2>9. Kontakt</h2>
+      <p>Für alle Fragen: <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a></p>
+    </main>
+    <footer>
+      © <span id="year">2026</span> MyFoodScan · <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a> · <a href="./terms-de.html">AGB</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('date').textContent = new Date().toISOString().slice(0, 10);
+  </script>
+</body>
+</html>
