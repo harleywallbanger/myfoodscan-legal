@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFoodScan — Legal</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      const langs = ['fr', 'en', 'de', 'es'];
+      const userLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+      const target = langs.includes(userLang) ? userLang : 'en';
+      window.location.replace(`./privacy-${target}.html`);
+    })();
+  </script>
+</head>
+<body>
+  <main class="container">
+    <h1>MyFoodScan</h1>
+    <p>Redirecting…</p>
+    <ul class="lang-list">
+      <li><a href="./privacy-en.html">English</a></li>
+      <li><a href="./privacy-fr.html">Français</a></li>
+      <li><a href="./privacy-de.html">Deutsch</a></li>
+      <li><a href="./privacy-es.html">Español</a></li>
+    </ul>
+  </main>
+</body>
+</html>
