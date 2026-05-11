@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFoodScan — Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="./index.html" class="brand">MyFoodScan</a>
+      <div class="lang-switcher">
+        <a href="./privacy-en.html" class="active">EN</a>
+        <a href="./privacy-fr.html">FR</a>
+        <a href="./privacy-de.html">DE</a>
+        <a href="./privacy-es.html">ES</a>
+      </div>
+    </header>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: <span id="date">2026-05-11</span></p>
+
+      <h2>1. Who we are</h2>
+      <p>MyFoodScan is a mobile application published by Jérôme Veit, resident in France.<br>Contact: <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a></p>
+
+      <h2>2. Data we collect</h2>
+      <h3>Stored only on your device</h3>
+      <ul>
+        <li>Your declared allergens and dietary preferences</li>
+        <li>Your scan history</li>
+        <li>Your language and display preferences</li>
+        <li>Your scan count (for the freemium model)</li>
+      </ul>
+      <p>This data never leaves your device. It is deleted if you uninstall the application.</p>
+
+      <h3>Transmitted to our servers (Cloudflare Worker)</h3>
+      <ul>
+        <li>The text of the ingredient list of the scanned product, when you use AI analysis (Premium feature)</li>
+        <li>No personal identifier is transmitted</li>
+      </ul>
+      <p>This data is relayed to the Anthropic API (Claude) for analysis and is not retained by our servers.</p>
+
+      <h3>Managed by RevenueCat (subscriptions)</h3>
+      <ul>
+        <li>Anonymous Apple or Google subscription identifier</li>
+        <li>In-app purchase history</li>
+        <li>Your subscription status</li>
+      </ul>
+      <p>See RevenueCat's policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+
+      <h2>3. Data we do NOT collect</h2>
+      <ul>
+        <li>Your name, address, or email</li>
+        <li>Your location</li>
+        <li>Your contacts</li>
+        <li>Your photos (unless you explicitly submit them)</li>
+        <li>Any advertising identifiers</li>
+        <li>Any data for tracking or advertising purposes</li>
+      </ul>
+
+      <h2>4. Subprocessors</h2>
+      <ul>
+        <li><strong>Cloudflare</strong> (Workers and proxy hosting) — <a href="https://www.cloudflare.com/privacypolicy/">policy</a></li>
+        <li><strong>Anthropic PBC</strong> (Claude model for AI analysis) — <a href="https://www.anthropic.com/legal/privacy">policy</a></li>
+        <li><strong>Open Food Facts</strong> (product database, anonymous queries) — <a href="https://world.openfoodfacts.org/privacy">policy</a></li>
+        <li><strong>RevenueCat</strong> (subscription management) — <a href="https://www.revenuecat.com/privacy">policy</a></li>
+        <li><strong>Apple / Google</strong> (in-app payments) — their respective policies</li>
+      </ul>
+
+      <h2>5. Your rights (GDPR)</h2>
+      <ul>
+        <li>Access your data: all your data is visible in the app (Profile, History)</li>
+        <li>Delete it: uninstalling the application removes all local data</li>
+        <li>Export it: contact us at <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a></li>
+        <li>File a complaint with your data protection authority</li>
+      </ul>
+
+      <h2>6. Security</h2>
+      <p>All communications with our servers are encrypted over HTTPS (TLS 1.2+). We do not store any personally identifiable information on our servers.</p>
+
+      <h2>7. Children</h2>
+      <p>MyFoodScan is not intended for children under 13 (or 16 depending on your country). We do not knowingly collect any data from children.</p>
+
+      <h2>8. Changes</h2>
+      <p>This policy may evolve. Any material change will be notified in the application.</p>
+
+      <h2>9. Contact</h2>
+      <p>For any questions: <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a></p>
+    </main>
+    <footer>
+      © <span id="year">2026</span> MyFoodScan · <a href="mailto:jerome75veit@gmail.com">jerome75veit@gmail.com</a> · <a href="./terms-en.html">Terms</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('date').textContent = new Date().toISOString().slice(0, 10);
+  </script>
+</body>
+</html>
